@@ -3,7 +3,7 @@ Gold: #F2B96E
 Chocolate: #371414
 Red: #EE3333
 Cream: #E6D3CE
-*/
+ 
 
 /* OVERRIDES */
 
@@ -13,10 +13,15 @@ This is going to flex with logo on left and menu items on right (flex in flex/gr
 
 /* NAV BUTTONS
 I want these to look like little square chocolates
+    box-shadow: inset -0.6em -0.6em 1em #371414,
+    inset 0.4em 0.4em 0.5em #E6D3CE,
+    0.8em 0.8em 2em #371414;
 */
 
 /* COVER SECTION 
-Chocolatey image with text beside or over the top
+Chocolatey image with text beside
+"A World of Pure Imagination"
+"Wonka's chocolates prove dreams do come true."
 */
 
 /* PRODUCT GRID SECTION
