@@ -2,36 +2,174 @@
 Gold: #F2B96E
 Chocolate: #371414
 Red: #EE3333
-Cream: #E6D3CE
- 
+Cream: #E6D3CE */
+
+@font-face {
+  font-family: "Big John";
+  src: url(./fonts/BIG\ JOHN.otf);
+  font-family: "Slim Joe";
+  src: url(./fonts/Slim\ Joe.otf);
+}
 
 /* OVERRIDES */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  margin: 0;
+  background: #ee3333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Big John", sans-serif;
+  color: #371414;
+}
+
+p,
+span {
+  font-family: "Gill Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
 
 /* NAVIGATION
 This is going to flex with logo on left and menu items on right (flex in flex/grid)
 */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  width: 70vw;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  margin: 0.2rem;
+}
+
+.logo svg {
+  width: 100px;
+}
 
 /* NAV BUTTONS
 I want these to look like little square chocolates
-    box-shadow: inset -0.6em -0.6em 1em #371414,
-    inset 0.4em 0.4em 0.5em #E6D3CE,
-    0.8em 0.8em 2em #371414;
 */
+nav ul li a {
+  padding: 0.6rem 1.6rem;
+  background: #371414;
+  font-family: "Big John", sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #e6d3ce;
+  text-decoration: none;
+  box-shadow: inset -0.2em -0.2em 0.2em #371414, inset 0.2em 0.2em 0.2em #e6d3ce,
+    0.2em 0.2em 0.6em #371414;
+}
+
+nav ul li a:hover {
+  background: #e6d3ce;
+  color: #371414;
+  transform: scale(150%);
+}
 
 /* COVER SECTION 
 Chocolatey image with text beside
 "A World of Pure Imagination"
 "Wonka's chocolates prove dreams do come true."
 */
+header {
+  padding: 70px 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: #e6d3ce;
+}
+
+header div {
+  align-self: center;
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+}
 
 /* PRODUCT GRID SECTION
 Section of product cards ordered in a grid
 hot chocolate, cold chocolate, baked chocolate, 
 */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product {
+  margin: 10px;
+  padding: 1rem;
+  background: #371414;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.product h2 {
+  margin: 0;
+  color: #e6d3ce;
+}
+
+.product span {
+  font-size: 1.2rem;
+  font-family: "Big John", sans-serif;
+  color: #f2b96e;
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* OUR STORY SECTION 
 Centered text talking about the factory
 */
+.our-story {
+  max-width: 60ch;
+  margin: 2rem auto;
+  color: #e6d3ce;
+}
+
+.our-story img {
+  opacity: 0.8;
+}
 
 /* THE FOUNDER
 Willy Wonka about section
