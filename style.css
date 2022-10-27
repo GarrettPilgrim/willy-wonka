@@ -16,6 +16,10 @@ Cream: #E6D3CE */
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 20px;
   margin: 0;
@@ -55,8 +59,8 @@ nav {
 
 nav ul {
   display: flex;
-  width: 70vw;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: flex-end;
   list-style: none;
   padding: 0;
 }
@@ -64,18 +68,20 @@ nav ul {
 .logo {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  border-radius: 30px;
-  margin: 0.2rem;
+  border-radius: 1rem;
+  margin: .4rem;
+  padding: 0.4rem;
 }
 
 .logo svg {
-  width: 100px;
+  width: 80px;
 }
 
 /* NAV BUTTONS
 I want these to look like little square chocolates
 */
 nav ul li a {
+  margin-right: 2rem;
   padding: 0.6rem 1.6rem;
   background: #371414;
   font-family: "Big John", sans-serif;
@@ -99,10 +105,20 @@ Chocolatey image with text beside
 "Wonka's chocolates prove dreams do come true."
 */
 header {
+  max-width: 90%;
+  margin: auto;
+  height: 100vh;
   padding: 70px 10px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: auto 90ch;
   color: #e6d3ce;
+}
+
+header img {
+  height: 100%;
+  align-self: center;
+  justify-self: end;
+  transform: rotate(20deg);
 }
 
 header div {
