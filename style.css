@@ -6,8 +6,8 @@ Cream: #E6D3CE */
 
 @font-face {
   font-family: "Big John";
-  src: url(./fonts/BIG\ JOHN.otf);
   font-family: "Slim Joe";
+  src: url(./fonts/BIG\ JOHN.otf);
   src: url(./fonts/Slim\ Joe.otf);
 }
 
@@ -21,9 +21,9 @@ html {
 }
 
 body {
+  background: #ee3333;
   font-size: 20px;
   margin: 0;
-  background: #ee3333;
 }
 
 h1,
@@ -31,8 +31,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Big John", sans-serif;
   color: #371414;
+  font-family: "Big John", sans-serif;
 }
 
 p,
@@ -48,28 +48,28 @@ img {
 This is going to flex with logo on left and menu items on right (flex in flex/grid)
 */
 nav {
-  width: 100%;
+  align-content: center;
   display: flex;
   justify-content: space-between;
-  align-content: center;
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 100;
 }
 
 nav ul {
   display: flex;
-  width: 100%;
   justify-content: flex-end;
   list-style: none;
   padding: 0;
+  width: 100%;
 }
 
 .logo {
-  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 1rem;
-  margin: .4rem;
+  margin: 0.4rem;
   padding: 0.4rem;
 }
 
@@ -81,14 +81,15 @@ nav ul {
 I want these to look like little square chocolates
 */
 nav ul li a {
-  margin-right: 2rem;
-  padding: 0.6rem 1.6rem;
   background: #371414;
+  color: #e6d3ce;
   font-family: "Big John", sans-serif;
   font-size: 0.8rem;
-  text-transform: uppercase;
-  color: #e6d3ce;
+  margin-right: 2rem;
+  padding: 0.6rem 1.6rem;
   text-decoration: none;
+  text-transform: uppercase;
+
   box-shadow: inset -0.2em -0.2em 0.2em #371414, inset 0.2em 0.2em 0.2em #e6d3ce,
     0.2em 0.2em 0.6em #371414;
 }
@@ -105,29 +106,31 @@ Chocolatey image with text beside
 "Wonka's chocolates prove dreams do come true."
 */
 header {
-  max-width: 90%;
-  margin: auto;
-  height: 100vh;
-  padding: 70px 10px;
+  color: #e6d3ce;
   display: grid;
   grid-template-columns: auto 90ch;
-  color: #e6d3ce;
+  height: 100vh;
+  margin: auto;
+  max-width: 90%;
+  padding: 70px 10px;
 }
 
 header img {
-  height: 100%;
   align-self: center;
-  justify-self: end;
-  transform: rotate(20deg);
+  filter: drop-shadow(0.5rem 0.5rem 2rem black);
+  justify-self: center;
+  max-height: 100%;
+  transform: rotate(15deg);
 }
 
 header div {
   align-self: center;
+  position: relative;
+  top: 4rem;
 }
 
 h1 {
   font-size: 4.5rem;
-  margin: 0;
 }
 
 header p {
@@ -145,42 +148,42 @@ hot chocolate, cold chocolate, baked chocolate,
 }
 
 .product {
-  margin: 10px;
-  padding: 1rem;
   background: #371414;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  padding: 1rem;
 }
 
 .product h2 {
-  margin: 0;
   color: #e6d3ce;
+  margin: 0;
 }
 
 .product span {
-  font-size: 1.2rem;
-  font-family: "Big John", sans-serif;
   color: #f2b96e;
+  font-family: "Big John", sans-serif;
+  font-size: 1.2rem;
 }
 
 .product img {
-  width: 100%;
   height: 250px;
   object-fit: cover;
+  width: 100%;
 }
 
 .product-text {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 /* OUR STORY SECTION 
 Centered text talking about the factory
 */
 .our-story {
-  max-width: 60ch;
-  margin: 2rem auto;
   color: #e6d3ce;
+  margin: 2rem auto;
+  max-width: 60ch;
 }
 
 .our-story img {
