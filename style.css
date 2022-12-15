@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background: #ee3333;
+  background: #f2b96e;
   font-size: 20px;
   margin: 0;
 }
@@ -48,13 +48,14 @@ img {
 This is going to flex with logo on left and menu items on right (flex in flex/grid)
 */
 nav {
-  align-content: center;
+  align-items: center;
   display: flex;
   justify-content: space-between;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
+  padding: 0.8rem;
 }
 
 nav ul {
@@ -62,42 +63,59 @@ nav ul {
   justify-content: flex-end;
   list-style: none;
   padding: 0;
-  width: 100%;
+  margin: 0;
 }
 
 .logo {
-  backdrop-filter: blur(5px);
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 1rem;
-  margin: 0.4rem;
-  padding: 0.4rem;
 }
 
 .logo svg {
-  width: 80px;
+  backdrop-filter: blur(5px);
+  /* background: #3714149f; */
+  /* background: rgba(255, 255, 255, 0.2); */
+  background: #5e2919;
+  border-radius: 0.1rem;
+  border: 10px inset #371414;
+  padding: 0.2rem 1rem;
+  width: 123px;
+  /*  */
 }
 
 /* NAV BUTTONS
 I want these to look like little square chocolates
 */
+nav ul li {
+  margin-right: 2rem;
+}
+
+nav ul li:last-of-type {
+  margin-right: 0;
+}
+
 nav ul li a {
-  background: #371414;
-  color: #e6d3ce;
+  background: #5e2919;
+  border-radius: 0.1rem;
+  border: 10px inset #371414;
+  color: #290b0b;
+  display: block;
   font-family: "Big John", sans-serif;
   font-size: 0.8rem;
-  margin-right: 2rem;
-  padding: 0.6rem 1.6rem;
+  padding: 0.4rem 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
 
-  box-shadow: inset -0.2em -0.2em 0.2em #371414, inset 0.2em 0.2em 0.2em #e6d3ce,
-    0.2em 0.2em 0.6em #371414;
+  /*  */
+  /* box-shadow: inset -0.2em -0.2em 0.2em #371414, inset 0.2em 0.2em 0.2em #e6d3ce,
+    0.2em 0.2em 0.6em #371414; */
+
+  /* Make the white text a different shade of chocolate */
 }
 
 nav ul li a:hover {
-  background: #e6d3ce;
-  color: #371414;
-  transform: scale(150%);
+  background: #290b0b;
+  color: #5e2919;
+  border: 10px groove #290b0b;
+  transform: scale(110%);
 }
 
 /* COVER SECTION 
@@ -106,13 +124,13 @@ Chocolatey image with text beside
 "Wonka's chocolates prove dreams do come true."
 */
 header {
-  color: #e6d3ce;
+  background: #ee3333;
+  color: #f2b96e;
   display: grid;
   grid-template-columns: auto 90ch;
   height: 100vh;
-  margin: auto;
-  max-width: 90%;
-  padding: 70px 10px;
+  max-width: 100%;
+  padding: 70px 50px;
 }
 
 header img {
@@ -131,6 +149,7 @@ header div {
 
 h1 {
   font-size: 4.5rem;
+  margin: 1.2rem 0;
 }
 
 header p {
@@ -149,6 +168,8 @@ hot chocolate, cold chocolate, baked chocolate,
 
 .product {
   background: #371414;
+  border-radius: 0.1rem;
+  border: 10px inset #371414;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin: 10px;
   padding: 1rem;
@@ -181,7 +202,7 @@ hot chocolate, cold chocolate, baked chocolate,
 Centered text talking about the factory
 */
 .our-story {
-  color: #e6d3ce;
+  color: #290b0b;
   margin: 2rem auto;
   max-width: 60ch;
 }
