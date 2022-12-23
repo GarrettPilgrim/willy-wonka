@@ -4,10 +4,10 @@ export default function Text() {
   return (
     <section class="our-story" id="our-story">
       <Image
-        src="/chocolate-factory.jpeg"
+        src="/images/chocolate-factory.jpeg"
         alt="Front outside view of the chocolate factory"
-        height={788}
         width={1400}
+        height={788}
       />
       <h2>Our Story</h2>
       <p>
