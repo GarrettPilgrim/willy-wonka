@@ -1,8 +1,9 @@
 import Image from "next/image";
+import styles from "./text.module.scss"
 
 export default function Text() {
   return (
-    <section class="our-story" id="our-story">
+    <section class={styles.ourstory} id="our-story">
       <Image
         src="/images/chocolate-factory.jpeg"
         alt="Front outside view of the chocolate factory"

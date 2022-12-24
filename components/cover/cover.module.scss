@@ -1,0 +1,41 @@
+/* COVER SECTION 
+Chocolatey image with text beside
+"A World of Pure Imagination"
+"Wonka's chocolates prove dreams do come true."
+*/
+.container {
+  header {
+    background: #ee3333;
+    color: #f2b96e;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100vh;
+    max-width: 100%;
+    padding: 70px 50px;
+  }
+
+  header img {
+    align-self: center;
+    filter: drop-shadow(0.5rem 0.5rem 2rem black);
+    justify-self: center;
+    max-height: 100%;
+    transform: rotate(15deg);
+  }
+
+  header div {
+    max-width: 80ch;
+    align-self: center;
+    position: relative;
+    top: 4rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    margin: 1.2rem 0;
+  }
+
+  header p {
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+  }
+}

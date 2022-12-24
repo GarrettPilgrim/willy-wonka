@@ -1,4 +1,5 @@
 import ProductCard from "../product-card/product-card";
+import styles from "./product-grid.module.scss"
 
 const products = {
   wonkaBar: {
@@ -31,7 +32,7 @@ export default function ProductGrid() {
   return (
     <>
       <h2>Products</h2>
-      <section class="product-grid" id="products">
+      <section class={styles.productgrid} id="products">
         <ProductCard product={products.wonkaBar} />
         <ProductCard product={products.hotChocolate} />
         <ProductCard product={products.coldChocolate} />

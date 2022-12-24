@@ -1,0 +1,35 @@
+/* PRODUCT GRID SECTION
+Section of product cards ordered in a grid
+hot chocolate, cold chocolate, baked chocolate, 
+*/
+.product {
+  background: #371414;
+  border-radius: 0.1rem;
+  border: 10px inset #371414;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  padding: 1rem;
+}
+
+.product h2 {
+  color: #e6d3ce;
+  margin: 0;
+}
+
+.product span {
+  color: #f2b96e;
+  font-family: "Big John", sans-serif;
+  font-size: 1.2rem;
+}
+
+.product img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.product-text {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
