@@ -8,7 +8,7 @@ Chocolatey image with text beside
     background: #ee3333;
     color: #f2b96e;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     height: 100vh;
     padding: 70px 50px;
   }
@@ -22,7 +22,6 @@ Chocolatey image with text beside
   }
 
   header div {
-    max-width: 80ch;
     align-self: center;
     position: relative;
     top: 4rem;

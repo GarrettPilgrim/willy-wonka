@@ -6,20 +6,17 @@ export default function Nav() {
   return (
     <div className={styles.container}>
       <nav>
-        <div class="logo">
+        <Link href="/" className={styles.logo}>
           <Image
             src="/images/willy-wonka-logo.svg"
             width={67.7333}
             height={40.6333}
             alt="Willy Wonka Chocolates Logo"
           />
-        </div>
+        </Link>
         <ul>
           <li>
-            <a href="#top">Top</a>
-          </li>
-          <li>
-            <a href="#products">Products</a>
+            <Link href="/products">Products</Link>
           </li>
           <li>
             <a href="#our-story">Story</a>

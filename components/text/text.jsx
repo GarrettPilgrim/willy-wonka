@@ -7,8 +7,8 @@ export default function Text() {
       <Image
         src="/images/chocolate-factory.jpeg"
         alt="Front outside view of the chocolate factory"
-        width={1400}
-        height={788}
+        width={780}
+        height={439}
       />
       <h2>Our Story</h2>
       <p>

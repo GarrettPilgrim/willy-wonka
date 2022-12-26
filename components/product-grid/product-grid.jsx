@@ -1,5 +1,6 @@
+import Link from "next/link";
 import ProductCard from "../product-card/product-card";
-import styles from "./product-grid.module.scss"
+import styles from "./product-grid.module.scss";
 
 const products = {
   wonkaBar: {
@@ -28,15 +29,21 @@ const products = {
   },
 };
 
-export default function ProductGrid() {
+export default function ProductGrid({ props }) {
   return (
     <>
       <h2>Products</h2>
       <section class={styles.productgrid} id="products">
-        <ProductCard product={products.wonkaBar} />
-        <ProductCard product={products.hotChocolate} />
-        <ProductCard product={products.coldChocolate} />
-        <ProductCard product={products.cookies} />
+        {props.map(({ id, image, title, price, alt }) => (
+          <ProductCard
+            key={id}
+            title={title}
+            image={image}
+            alt={alt}
+            price={price}
+            id={id}
+          />
+        ))}
       </section>
     </>
   );
