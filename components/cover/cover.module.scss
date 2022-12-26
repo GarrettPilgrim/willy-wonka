@@ -8,9 +8,8 @@ Chocolatey image with text beside
     background: #ee3333;
     color: #f2b96e;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     height: 100vh;
-    max-width: 100%;
     padding: 70px 50px;
   }
 

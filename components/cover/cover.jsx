@@ -8,8 +8,8 @@ export default function Cover() {
         <Image
           src="/images/wonka-bar-transparent.png"
           alt="opened chocolate bar"
-          width={1472}
-          height={2056}
+          width={368}
+          height={514}
         />
         <div>
           <h1>A World of Pure Imagination</h1>
