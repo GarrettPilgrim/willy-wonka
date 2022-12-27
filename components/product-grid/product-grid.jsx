@@ -31,9 +31,9 @@ const products = {
 
 export default function ProductGrid({ props }) {
   return (
-    <>
+    <div class={styles.productgrid}>
       <h2>Products</h2>
-      <section class={styles.productgrid} id="products">
+      <section id="products">
         {props.map(({ id, image, title, price, alt }) => (
           <ProductCard
             key={id}
@@ -45,6 +45,6 @@ export default function ProductGrid({ props }) {
           />
         ))}
       </section>
-    </>
+    </div>
   );
 }

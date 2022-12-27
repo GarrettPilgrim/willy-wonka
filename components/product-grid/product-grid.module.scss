@@ -1,4 +1,18 @@
 .productgrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5rem;
+  padding: 1rem;
+
+  section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .productgrid {
+    section {
+      grid-template-columns: 1fr;
+    }
+  }
 }

@@ -4,6 +4,7 @@ date: "2020-01-01"
 price: 100
 image: "/images/ice-cream.jpg"
 alt: "Wonka chocolate ice cream cone"
+
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

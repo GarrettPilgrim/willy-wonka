@@ -7,25 +7,31 @@ hot chocolate, cold chocolate, baked chocolate,
   border-radius: 0.1rem;
   border: 10px inset #371414;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  margin: 10px;
   padding: 1rem;
+  text-decoration: none;
+
+  h2 {
+    color: #e6d3ce;
+    margin: 0;
+  }
+
+  span {
+    color: #f2b96e;
+    font-family: "Big John", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+  }
 }
 
-.product h2 {
-  color: #e6d3ce;
-  margin: 0;
-}
-
-.product span {
-  color: #f2b96e;
-  font-family: "Big John", sans-serif;
-  font-size: 1.2rem;
-}
-
-.product img {
-  height: 250px;
-  object-fit: cover;
-  width: 100%;
+.product:hover {
+  background: #5e2919;
+  border-radius: 0.1rem;
+  border: 10px inset #290b0b;
 }
 
 .product-text {

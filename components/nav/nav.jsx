@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./nav.module.scss"
+import Links from "../links/links";
+import BurgerMenu from "../burger/burger-menu";
+import styles from "./nav.module.scss";
 
 export default function Nav() {
   return (
     <div className={styles.container}>
-      <nav>
+      <nav className={styles.desktopMenu}>
         <Link href="/" className={styles.logo}>
           <Image
             src="/images/willy-wonka-logo.svg"
@@ -15,16 +17,11 @@ export default function Nav() {
           />
         </Link>
         <ul>
-          <li>
-            <Link href="/products">Products</Link>
-          </li>
-          <li>
-            <a href="#our-story">Story</a>
-          </li>
-          <li>
-            <a href="#founder">Founder</a>
-          </li>
+          <Links />
         </ul>
+        <div className={styles.mobileMenu}>
+          <BurgerMenu />
+        </div>
       </nav>
     </div>
   );

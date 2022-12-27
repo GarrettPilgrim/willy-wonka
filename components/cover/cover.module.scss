@@ -10,21 +10,21 @@ Chocolatey image with text beside
     display: grid;
     grid-template-columns: 1fr 2fr;
     height: 100vh;
-    padding: 70px 50px;
-  }
+    padding: 70px calc(10px + 2%);
 
-  header img {
-    align-self: center;
-    filter: drop-shadow(0.5rem 0.5rem 2rem black);
-    justify-self: center;
-    max-height: 100%;
-    transform: rotate(15deg);
-  }
+    img {
+      align-self: center;
+      filter: drop-shadow(0.5rem 0.5rem 2rem black);
+      justify-self: center;
+      max-height: 100%;
+      transform: rotate(15deg);
+    }
 
-  header div {
-    align-self: center;
-    position: relative;
-    top: 4rem;
+    div {
+      align-self: center;
+      position: relative;
+      top: 4rem;
+    }
   }
 
   h1 {
@@ -35,5 +35,24 @@ Chocolatey image with text beside
   header p {
     font-size: 1.6rem;
     margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    header {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      div {
+        position: relative;
+        top: 0;
+        align-self: stretch;
+      }
+      img {
+        height: 90vw;
+        transform: rotate(90deg);
+      }
+    }
   }
 }
