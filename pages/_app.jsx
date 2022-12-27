@@ -1,7 +1,7 @@
 import "../styles/global.scss";
 import localfont from "@next/font/local";
 
-const bigJohn = localfont({ src: "../fonts/BIG-JOHN.otf" });
+const bigJohn = localfont({ src: "../public/fonts/BIG-JOHN.otf" });
 
 export default function App({ Component, pageProps }) {
   return (

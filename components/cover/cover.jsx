@@ -12,7 +12,7 @@ export default function Cover() {
           height={514}
         />
         <div>
-          <h1>A World of Pure Imagination</h1>
+          <h1>A World<br/> of Pure <br/>Imagination</h1>
           <p>Wonka's chocolates prove dreams do come true.</p>
         </div>
       </header>
