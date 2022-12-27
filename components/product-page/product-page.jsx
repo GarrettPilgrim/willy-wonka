@@ -7,11 +7,11 @@ export default function ProductPage(props) {
     <Image 
       src={props.image}
       alt=""
-      width={100}
-      height={100}
+      width={910}
+      height={512}
     />
-      <h2>{props.title}</h2>
-      <h3>{props.price}</h3>
+      <h1>{props.title}</h1>
+      <h2>${props.price}</h2>
       <div dangerouslySetInnerHTML={props.content}>
       </div>
     </div>
