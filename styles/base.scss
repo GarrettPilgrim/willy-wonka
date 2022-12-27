@@ -1,0 +1,20 @@
+$primary-color: #371414;
+$secondary-color: #5e2919;
+$tertiary-color: #290b0b;
+$accent-color: #ee3333;
+$light-color: #f2b96e;
+$white-color: #e6d3ce;
+
+@mixin chocolate {
+  background: #5e2919;
+  border-radius: 0.1rem;
+  border: 10px inset #371414;
+  color: #290b0b;
+}
+
+@mixin chocolateHover {
+  background: #290b0b;
+  color: #5e2919;
+  border: 10px groove #290b0b;
+  transform: scale(110%);
+}

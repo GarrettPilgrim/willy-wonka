@@ -5,14 +5,9 @@ import BurgerIcon from "./burger-icon";
 import styles from "./burger.module.scss";
 
 const jsstyles = {
-  bmMenu: {
-    background: "#5e2919",
-    position: "fixed",
-    width: "100%",
-    padding: "1rem",
-  },
-  bmItem: {
-    color: "white",
+  bmBurgerButton: {
+    width: "36px",
+    height: "36px",
   },
 };
 
@@ -22,10 +17,12 @@ export default function BurgerMenu() {
       customBurgerIcon={<BurgerIcon />}
       right
       noOverlay
+      className={styles.burgerMenu}
       styles={jsstyles}
-      className={styles.BurgerMenu}
     >
-      <Links />
+      <ul>
+        <Links />
+      </ul>
     </Menu>
   );
 }

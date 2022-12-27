@@ -1,12 +1,9 @@
-/* COVER SECTION 
-Chocolatey image with text beside
-"A World of Pure Imagination"
-"Wonka's chocolates prove dreams do come true."
-*/
+@use "../../styles/base.scss";
+
 .container {
   header {
-    background: #ee3333;
-    color: #f2b96e;
+    background: base.$accent-color;
+    color: base.$white-color;
     display: grid;
     grid-template-columns: 1fr 2fr;
     height: 100vh;
@@ -30,6 +27,7 @@ Chocolatey image with text beside
   h1 {
     font-size: clamp(1rem, 7vw + 1rem, 8rem);
     margin: 1.2rem 0;
+    line-height: 95%;
   }
 
   header p {

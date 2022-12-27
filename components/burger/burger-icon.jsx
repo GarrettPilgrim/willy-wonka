@@ -1,11 +1,10 @@
-import styles from "./burger.module.scss"
+import styles from "./burger.module.scss";
 
 export default function BurgerIcon() {
   return (
     <div className={styles.burgerIcon}>
       <svg
         className=""
-        fill="none"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"

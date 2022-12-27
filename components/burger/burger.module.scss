@@ -1,4 +1,16 @@
+@use "../../styles/base.scss";
+
 .burgerIcon {
   width: 36px;
   height: 36px;
+  svg {
+    fill: base.$light-color;
+    stroke: 2px base.$white-color;
+  }
+}
+
+.burgerMenu {
+  nav {
+    background: base.$primary-color;
+  }
 }
