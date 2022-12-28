@@ -4,10 +4,28 @@ import Links from "../links/links";
 import BurgerIcon from "./burger-icon";
 import styles from "./burger.module.scss";
 
-const jsstyles = {
+let jsstyles = {
   bmBurgerButton: {
+    position: "fixed",
+    top: "33px",
+    right: "20px",
     width: "36px",
     height: "36px",
+  },
+  bmMenuWrap: {
+    top: "0px",
+    width: "100%",
+    background: "#371414",
+  },
+  bmCrossButton: {
+    width: "36px",
+    height: "36px",
+    position: "fixed",
+    top: "33px",
+    right: "20px",
+  },
+  bmCross: {
+    background: "#f2b96e",
   },
 };
 
@@ -16,7 +34,6 @@ export default function BurgerMenu() {
     <Menu
       customBurgerIcon={<BurgerIcon />}
       right
-      noOverlay
       className={styles.burgerMenu}
       styles={jsstyles}
     >

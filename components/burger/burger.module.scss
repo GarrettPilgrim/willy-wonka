@@ -1,16 +1,16 @@
 @use "../../styles/base.scss";
 
 .burgerIcon {
-  width: 36px;
-  height: 36px;
-  svg {
-    fill: base.$light-color;
-    stroke: 2px base.$white-color;
-  }
+  stroke: base.$secondary-color;
+  backdrop-filter: blur(5px);
+  border-radius: 0.1rem;
 }
 
 .burgerMenu {
   nav {
-    background: base.$primary-color;
+    margin-top: 100px;
+  }
+  nav ul li {
+    margin-right: 0 !important;
   }
 }

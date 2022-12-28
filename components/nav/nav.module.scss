@@ -46,6 +46,7 @@ This is going to flex with logo on left and menu items on right (flex in flex/gr
     @include base.chocolate;
     padding: 0.2rem 1rem;
     width: 123px;
+    z-index: 2000;
   }
 
   .logo:hover {
