@@ -1,0 +1,21 @@
+@use "../../styles/base.scss";
+
+.container {
+  background: base.$secondary-color;
+  height: 35vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+  border-top: 20px inset #371414;
+
+  a {
+    @include base.chocolate;
+    padding: 0.8rem 1.6rem;
+    text-decoration: none;
+  }
+  a:hover {
+    @include base.chocolateHover;
+  }
+}
